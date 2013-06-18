@@ -1,0 +1,7 @@
+[user]
+  email = me@jamesaanderson.com
+[color]
+  ui = auto
+[core]
+  editor = vim --noplugin
+  excludesfile = /Users/jamesanderson/.gitignore
