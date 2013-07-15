@@ -24,6 +24,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'nono/vim-handlebars'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'elixir-lang/vim-elixir'
 
 " General
 filetype plugin indent on
