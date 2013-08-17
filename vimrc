@@ -7,7 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My bundles
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'chriskempson/base16-vim'
 Bundle 'danro/rename.vim'
@@ -25,6 +25,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'nono/vim-handlebars'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'tpope/vim-dispatch'
 
 " General
 filetype plugin indent on
@@ -56,9 +58,11 @@ set cursorline
 set pastetoggle=<F2>
 set clipboard=unnamed
 
-let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
 
 let g:ctrlp_show_hidden = 1
+
+let g:rspec_command = "Dispatch rspec {spec}"
 
 " Mappings
 let mapleader = ','
