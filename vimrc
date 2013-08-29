@@ -27,6 +27,7 @@ Bundle 'vim-scripts/VimClojure'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'tpope/vim-dispatch'
+Bundle 'mileszs/ack.vim'
 
 " General
 filetype plugin indent on
@@ -59,10 +60,9 @@ set pastetoggle=<F2>
 set clipboard=unnamed
 
 let g:airline_powerline_fonts = 1
-
 let g:ctrlp_show_hidden = 1
-
 let g:rspec_command = "Dispatch rspec {spec}"
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Mappings
 let mapleader = ','
