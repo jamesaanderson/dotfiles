@@ -28,6 +28,7 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'tpope/vim-dispatch'
 Bundle 'mileszs/ack.vim'
+Bundle 'henrik/vim-ruby-runner'
 
 " General
 filetype plugin indent on
