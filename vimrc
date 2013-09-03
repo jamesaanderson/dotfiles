@@ -64,6 +64,8 @@ let g:airline_powerline_fonts = 1
 let g:ctrlp_show_hidden = 1
 let g:rspec_command = "Dispatch rspec {spec}"
 let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
 
 " Mappings
 let mapleader = ','
