@@ -56,10 +56,10 @@ h() { cd ~/; }
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 
-PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
