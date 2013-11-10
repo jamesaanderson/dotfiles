@@ -29,6 +29,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'tpope/vim-dispatch'
 Bundle 'mileszs/ack.vim'
 Bundle 'henrik/vim-ruby-runner'
+Bundle 'concise-lang/vim-concise'
 
 " General
 filetype plugin indent on
