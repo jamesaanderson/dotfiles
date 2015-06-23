@@ -30,6 +30,12 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'mileszs/ack.vim'
 Bundle 'henrik/vim-ruby-runner'
 Bundle 'concise-lang/vim-concise'
+Bundle 'fatih/vim-go'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'dsawardekar/ember.vim'
+Bundle 'wakatime/vim-wakatime'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
 
 " General
 filetype plugin indent on
@@ -51,8 +57,10 @@ set relativenumber
 
 syntax on
 set hlsearch
+set ignorecase
 
 set t_Co=256
+
 " Color scheme
 colorscheme base16-default
 set background=dark
@@ -92,3 +100,6 @@ map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
 map <C-t> <esc>:tabnew<CR>
 map <C-x> <C-w>c
+
+au BufRead,BufNewFile *.go set filetype=go
+au BufNewFile,BufRead *.ejs set filetype=html

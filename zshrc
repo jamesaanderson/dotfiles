@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="geoffgarside"
+ZSH_THEME="avit"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -52,16 +52,35 @@ stty stop undef
 c() { cd ~/Code/$1; }
 h() { cd ~/; }
 
+now() {
+  echo $(date "+%Y-%m-%d %H:%M:%S") - "$@" >> $HOME/.now
+}
+
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export PATH=~/pebble-dev/PebbleSDK-2.0-BETA7/bin:$PATH
+export PATH=/Users/jamesanderson/.octocatsay/bin:$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
+
+export EDITOR=vim
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-
-PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# added by travis gem
+[ -f /Users/jamesanderson/.travis/travis.sh ] && source /Users/jamesanderson/.travis/travis.sh
+
+# curl -s https://api.github.com/zen | octocatsay
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Code
+source /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
+ctags=/usr/local/bin/ctags
